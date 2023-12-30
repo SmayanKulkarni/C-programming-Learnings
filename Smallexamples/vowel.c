@@ -1,14 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-// char toupper(char a[], int len)
-// {
-//     for(int i=0;i<len;i++)
-//     {
-//         int(a[i])+=64;
-//     }
-//     return a[];
-// }
+
 void main()
 {
     char a[100];
@@ -21,9 +14,9 @@ void main()
     
     for(int i=0;i<len;i++)
     {
-        if (!(a[i] == 'A' || a[i] == 'E' || a[i] == 'I' || a[i] == 'O' || a[i] == 'U' || a[i] == 'a' || a[i] == 'e' || a[i] == 'i' || a[i] == 'o' || a[i] == 'u'))
+        if (a[i] == 'A' || a[i] == 'E' || a[i] == 'I' || a[i] == 'O' || a[i] == 'U' || a[i] == 'a' || a[i] == 'e' || a[i] == 'i' || a[i] == 'o' || a[i] == 'u')
         {
-            
+            ctr++;
             newpos = i;
             a[newpos] = a[newpos + 1];
             newpos++;
