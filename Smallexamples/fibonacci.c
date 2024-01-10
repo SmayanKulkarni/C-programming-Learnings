@@ -1,22 +1,13 @@
 #include <stdio.h>
 
-int fib(int a)
-{
-    if(a==0) return 0;
-    if(a==1) return 1;
-    
-    return fib(a-1) + fib(a-2);
-}
-
 void main()
 {
-    int n;
-    printf("Enter how many numbers series you need: ");
-    scanf("%d", &n);
-
-    for(int i=0;i<n-1;i++)
+    int a = 10, b = 5;
+    int gcd;
+    for (int i = 1; i <= a && i <= b; i++)
     {
-        if(i<=n) printf("%d, ", fib(i));
-        else printf(".");
+        if (a % i == 0 && b % i == 0)
+            gcd = i;
     }
+    printf("%d", gcd);
 }

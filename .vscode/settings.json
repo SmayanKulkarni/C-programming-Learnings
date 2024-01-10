@@ -2,6 +2,7 @@
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
         "stdio.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "REC1.C": "cpp"
     }
 }

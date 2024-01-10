@@ -5,7 +5,8 @@ void main()
     int n;
     printf("Enter the number of rwos: ");
     scanf("%d", &n);
-    int nsp=n-1;
+    int nsp=0;
+    int a=n;
     for(int i=1;i<=n;i++)
     {
         for (int k = 1; k <=nsp; k++)
@@ -14,11 +15,12 @@ void main()
         }
         
 
-        for (int j = 1; j <=i; j++)
+        for (int j = a; j >=1;j--)
         {
-            printf("%d ",j);
+             printf("*");
         }
+        a-=2;
         printf("\n");
-     nsp--;   
+     nsp++;   
     }
 }
